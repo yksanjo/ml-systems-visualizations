@@ -1,0 +1,33 @@
+{
+  "name": "ml-systems-visualizations",
+  "version": "1.0.0",
+  "description": "Interactive visualizations for ML Systems research",
+  "private": true,
+  "workspaces": [
+    "system-architecture",
+    "data-pipeline",
+    "training-simulator",
+    "edge-deployment",
+    "metrics-dashboard",
+    "mlops-pipeline"
+  ],
+  "scripts": {
+    "dev:arch": "npm run dev --workspace=system-architecture",
+    "dev:pipeline": "npm run dev --workspace=data-pipeline",
+    "dev:training": "npm run dev --workspace=training-simulator",
+    "dev:edge": "npm run dev --workspace=edge-deployment",
+    "dev:metrics": "npm run dev --workspace=metrics-dashboard",
+    "dev:mlops": "npm run dev --workspace=mlops-pipeline",
+    "build:all": "npm run build --workspaces",
+    "build:arch": "npm run build --workspace=system-architecture",
+    "build:pipeline": "npm run build --workspace=data-pipeline",
+    "build:training": "npm run build --workspace=training-simulator",
+    "build:edge": "npm run build --workspace=edge-deployment",
+    "build:metrics": "npm run build --workspace=metrics-dashboard",
+    "build:mlops": "npm run build --workspace=mlops-pipeline"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  }
+}
+
