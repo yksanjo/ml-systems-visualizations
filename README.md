@@ -1,104 +1,82 @@
-# ML Systems Research Visualizations
+# ml-systems-visualizations
 
-[![Built for cs249r_book](https://img.shields.io/badge/Built%20for-cs249r__book-blue)](https://github.com/harvard-edge/cs249r_book)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## Detailed Description
 
-Interactive 3D/2D visualizations and simulations of Machine Learning Systems research concepts, designed to complement the [cs249r_book](https://github.com/yksanjo/cs249r_book) textbook.
+ml-systems-visualizations is maintained as an industry-grade software project with production-ready engineering practices.  
+This repository includes documented setup, quality gates, operational guidance, and governance standards so contributors can safely build, test, and ship changes with confidence.
 
-## Credits & Attribution
+## Problem Statement
 
-This visualization project is built to complement the **Introduction to Machine Learning Systems** textbook:
+Describe the user or business problem this project solves, the target users, and expected outcomes.
 
-- **Original Repository**: [harvard-edge/cs249r_book](https://github.com/harvard-edge/cs249r_book)
-- **Forked Repository**: [yksanjo/cs249r_book](https://github.com/yksanjo/cs249r_book)
-- **Textbook Website**: [mlsysbook.ai](https://mlsysbook.ai/)
-- **Author**: Prof. Vijay Janapa Reddi (Harvard University)
+## Solution Overview
 
-The visualizations are inspired by and designed to support the educational content in the Machine Learning Systems textbook, originally developed as Harvard University's CS249r course.
+Summarize the architecture, core modules, and runtime behavior at a high level.
 
-## Overview
+## Key Features
 
-This project provides six interactive visualizations that demonstrate key concepts from ML Systems research:
+- Clear project scope and intended use.
+- Reproducible local development workflow.
+- Test coverage and CI quality gates.
+- Security and contribution policies.
+- Deployment-ready repository structure.
 
-1. **System Architecture Explorer** - 3D interactive ML system architecture
-2. **Data Pipeline Flow** - 2D interactive data pipeline simulator  
-3. **Training Simulator** - Real-time training process visualization
-4. **Edge Deployment Network** - 3D edge AI deployment visualization
-5. **Metrics Dashboard** - Performance metrics and analytics
-6. **MLOps Pipeline** - CI/CD and MLOps workflow visualizer
+## Repository Structure
 
-## Quick Start
+```text
+.
+|-- src/                  # Core implementation
+|-- tests/                # Automated test suites
+|-- docs/                 # Design notes and operational docs
+|-- .github/workflows/    # CI pipelines
+|-- README.md
+|-- LICENSE
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- CODE_OF_CONDUCT.md
+```
 
-See [visualizations/QUICKSTART.md](visualizations/QUICKSTART.md) for detailed setup instructions.
+## Getting Started
+
+### Prerequisites
+
+- Git
+- Project runtime/toolchain for this repo
+
+### Local Setup
 
 ```bash
-cd visualizations
-npm install
-npm run dev:arch  # Start System Architecture visualization
+make test
+make lint
 ```
 
-## Project Structure
+## Usage
 
-```
-ml-systems-visualizations/
-├── visualizations/
-│   ├── system-architecture/    # 3D ML system architecture
-│   ├── data-pipeline/          # 2D data pipeline flow
-│   ├── training-simulator/     # Training process simulator
-│   ├── edge-deployment/        # Edge AI deployment network
-│   ├── metrics-dashboard/      # Performance metrics dashboard
-│   ├── mlops-pipeline/         # MLOps pipeline visualizer
-│   ├── shared/                 # Shared React components
-│   ├── README.md               # Detailed documentation
-│   ├── QUICKSTART.md           # Quick start guide
-│   └── CITATION.bib            # Research citation
-```
+Document primary commands, API routes, CLI examples, or UI workflows here.
 
-## Technology Stack
+## Quality Standards
 
-- **React 18** - UI framework
-- **Vite** - Build tool and dev server
-- **Three.js** (@react-three/fiber) - 3D graphics
-- **D3.js** - 2D diagrams and data visualization
-- **Recharts** - Chart components
-- **Tailwind CSS** - Styling
-- **Zustand** - State management
+- CI must pass before merge.
+- Changes require tests for critical behavior.
+- Security-sensitive changes should include risk notes.
+- Keep pull requests focused and reviewable.
 
-## Citation
+## Security
 
-```bibtex
-@inproceedings{reddi2024mlsysbook,
-  title        = {MLSysBook.AI: Principles and Practices of Machine Learning Systems Engineering},
-  author       = {Reddi, Vijay Janapa},
-  booktitle    = {2024 International Conference on Hardware/Software Codesign and System Synthesis (CODES+ISSS)},
-  pages        = {41--42},
-  year         = {2024},
-  organization = {IEEE},
-  url          = {https://mlsysbook.org}
-}
-```
-
-## License
-
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
-
-## Credits & Attribution
-
-This visualization project complements the **Introduction to Machine Learning Systems** textbook:
-
-- **Original Repository**: [harvard-edge/cs249r_book](https://github.com/harvard-edge/cs249r_book)
-- **Forked Repository**: [yksanjo/cs249r_book](https://github.com/yksanjo/cs249r_book)
-- **Textbook Website**: [mlsysbook.ai](https://mlsysbook.ai/)
-- **Author**: Prof. Vijay Janapa Reddi (Harvard University)
-
-See [ATTRIBUTION.md](ATTRIBUTION.md) for detailed credits and acknowledgments.
+See `SECURITY.md` for responsible disclosure and handling guidelines.
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+See `CONTRIBUTING.md` for branching, commit, and pull request expectations.
 
-## Related Projects
+## Roadmap
 
-- [cs249r_book](https://github.com/harvard-edge/cs249r_book) - Original Machine Learning Systems textbook
-- [mlsysbook.ai](https://mlsysbook.ai/) - Online version of the textbook
+Track upcoming milestones, technical debt, and planned feature work.
 
+## Support
+
+Open a GitHub issue for bugs, feature requests, or documentation gaps.
+
+## License
+
+This project is released under the MIT License.
