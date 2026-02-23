@@ -1,5 +1,12 @@
 # ml-systems-visualizations
 
+Production-grade project scaffold focused on reliability, maintainability, and fast onboarding.
+
+[![CI](https://img.shields.io/github/actions/workflow/status/yksanjo/ml-systems-visualizations/ci.yml?branch=main&label=ci)](https://github.com/yksanjo/ml-systems-visualizations/actions)
+![License](https://img.shields.io/github/license/yksanjo/ml-systems-visualizations)
+![Last Commit](https://img.shields.io/github/last-commit/yksanjo/ml-systems-visualizations)
+![Repo Size](https://img.shields.io/github/repo-size/yksanjo/ml-systems-visualizations)
+
 ## Detailed Description
 
 ml-systems-visualizations is maintained as an industry-grade software project with production-ready engineering practices.  
